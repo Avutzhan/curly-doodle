@@ -30,3 +30,9 @@ Dockerized laravel boilerplate
 - php artisan migrate:fresh --seed
 - psql -U postgres laravel_docker
 - SELECT * FROM quotes;
+
+##Scale up
+
+- docker-compose up --scale php-apache=10 -d
+- docker-compose ps
+- 

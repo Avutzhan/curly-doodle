@@ -13,11 +13,10 @@ services:
         ports:
             - '5432:5432'
     php-apache:
-        container_name: php-apache
         build:
             context: ./php
         ports:
-            - '8080:80'
+            - '8080'
         volumes:
             - ./src:/var/www/laravel_docker
             - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
